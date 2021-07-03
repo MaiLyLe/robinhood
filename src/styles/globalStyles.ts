@@ -122,4 +122,8 @@ button:focus {
 button:focus-visible {
   outline: auto;
 }
+
+a {
+  text-decoration: none;
+}
 `

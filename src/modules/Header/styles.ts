@@ -16,7 +16,7 @@ export const LinkListLeft = styled.ul`
 `
 
 export const LinkContainer = styled.li<{ isActive?: boolean }>`
-    ${tw`flex items-center h-full px-3 uppercase hover:underline `}
+    ${tw`flex items-center h-full px-3 uppercase text-black hover:underline  `}
     font-weight: ${({ isActive }) => (isActive ? '700' : '400')};
 `
 
@@ -33,6 +33,7 @@ export const CircleButton = styled.button`
             opacity: 1;
         }
         .initialIcon {
+            top: 3px;
             opacity: 0;
         }
     }
