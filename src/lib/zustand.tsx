@@ -51,7 +51,11 @@ export const useHydrate = (initialState: unknown) => {
 
 export const StateStoreContext = React.createContext(null)
 
-export const StoreProvider = ({ children, store }) => {
+type StoreProviderProps = {
+    children: React.ReactNode
+    store: any
+}
+export const StoreProvider = ({ children, store }: StoreProviderProps) => {
     return (
         <StateStoreContext.Provider value={store}>
             {children}
@@ -63,8 +67,9 @@ export const useStore = (
     selector: StateSelector<StoreType, Partial<StoreType>>,
     equalityFn?: EqualityChecker<InitialState>,
 ) => {
+    // @ts-ignore
     const store: UseStore<StoreType> = React.useContext(StateStoreContext)
-
+    // @ts-ignore
     const values = store(selector, equalityFn)
 
     return values
