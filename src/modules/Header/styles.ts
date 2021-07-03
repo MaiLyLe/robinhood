@@ -13,11 +13,13 @@ export const LinkListLeft = styled.ul`
     li:first-child {
         margin-right: 50px;
     }
+    a {
+        color: black;
+    }
 `
 
 export const LinkContainer = styled.li<{ isActive?: boolean }>`
     ${tw`flex items-center h-full px-3 uppercase text-black hover:underline  `}
-    color: black;
     font-weight: ${({ isActive }) => (isActive ? '700' : '400')};
 `
 
@@ -53,7 +55,7 @@ export const IconWrapper = styled.div`
         position: absolute;
     }
 
-    &.initalIcon {
+    &.initialIcon {
         top: 3px;
     }
 `
