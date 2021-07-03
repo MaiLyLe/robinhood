@@ -1,15 +1,61 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "10.x",
-    "react": "17.x",
-    "react-dom": "17.x"
-  }
+    "name": "robinhood",
+    "version": "0.1.0",
+    "private": true,
+    "babelMacros": {
+        "twin": {
+            "config": "./tailwind.config.js",
+            "preset": "styled-components"
+        }
+    },
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "formik": "^2.2.9",
+        "husky": "^6.0.0",
+        "next": "10.x",
+        "next-compose-plugins": "^2.2.1",
+        "next-pwa": "^5.2.22",
+        "next-svgr": "^0.0.2",
+        "postcss-easy-import": "^3.0.0",
+        "react": "17.x",
+        "react-dom": "17.x",
+        "react-icons": "^4.2.0",
+        "styled-components": "^5.3.0",
+        "yup": "^0.32.9",
+        "zustand": "^3.5.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/helper-plugin-utils": "^7.12.13",
+        "@babel/parser": "^7.14.4",
+        "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.2",
+        "@babel/plugin-proposal-optional-chaining": "^7.14.2",
+        "@babel/plugin-transform-modules-commonjs": "^7.14.0",
+        "@babel/preset-env": "^7.14.4",
+        "@babel/traverse": "^7.14.2",
+        "@types/react": "^17.0.11",
+        "@types/styled-components": "^5.1.10",
+        "@types/yup": "^0.29.11",
+        "@typescript-eslint/eslint-plugin": "^4.28.0",
+        "@typescript-eslint/parser": "^4.28.0",
+        "autoprefixer": "^10.2.6",
+        "babel-plugin-macros": "^2.8.0",
+        "babel-plugin-twin": "^1.0.2",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-react-app": "^6.0.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-react": "^7.24.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "postcss": "^8.3.5",
+        "postcss-cli": "^8.3.1",
+        "prettier": "2.3.1",
+        "tailwindcss": "^2.2.4",
+        "twin.macro": "^2.5.0",
+        "typescript": "^4.3.4"
+    }
 }
