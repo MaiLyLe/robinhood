@@ -19,7 +19,7 @@ Not every library is listed here, but the most important ones in the hope that *
 Style library to visually separate your css from your React components. Also provides style themes and conditional css options.
 
 **Tailwind**
-[Tailwind](https://tailwindcss.com/) is a CSS framework similar to bootstrap for quicker styling. Here it is combined with Styled Components via Twin Macro. This means we do separate it from the rest of the code for cleaner code.
+[Tailwind](https://tailwindcss.com/) is a CSS framework similar to bootstrap for quicker styling. Here it is combined with Styled Components via Twin Macro. This means we do separate it from the rest of the  code for cleaner code.
 
 **Zustand**
 [Zustand](https://www.npmjs.com/package/zustand) is a state management library that is rather simplified in comparison to Redux.
@@ -33,7 +33,9 @@ To-add to the project in the nearest future: next-pwa, i18n
 ## **NPM Setup/Package Installment:**
 
 Go to your browser and install [Nodejs](https://nodejs.org/en/)
-Clone project and go to directory via your terminal, then type in your terminal
+
+Please fork project if you want to play with it locally.
+And go to directory via your terminal, then type in your terminal
 
     $ npm i
 
