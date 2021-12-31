@@ -1,13 +1,14 @@
 import React from 'react'
 import { NextPage, GetServerSideProps } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-
 import Layout from '../../modules/Layout/Layout'
 
-const MyAccount: NextPage<{}> = () => {
+type Props = {}
+
+const Login: NextPage<Props> = ({}) => {
     return (
         <Layout>
-            <div>my account</div>
+            <div>Login</div>
         </Layout>
     )
 }
@@ -15,6 +16,7 @@ const MyAccount: NextPage<{}> = () => {
 export const getServerSideProps: GetServerSideProps = async (context) => {
     //data fetching goes here
     const { locale } = context
+
     return {
         props: {
             ...(await serverSideTranslations((locale as string) ?? 'en')),
@@ -22,4 +24,4 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     }
 }
 
-export default MyAccount
+export default Login

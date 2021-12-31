@@ -1,5 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
+import { appWithTranslation } from 'next-i18next'
+
 import '../styles/Tailwind.css'
 
 import { theme } from '../styles/theme'
@@ -19,4 +21,4 @@ function RobinHood({ Component, pageProps }: AppProps) {
         </StoreProvider>
     )
 }
-export default RobinHood
+export default appWithTranslation(RobinHood)
